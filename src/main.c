@@ -1,10 +1,15 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "true_rand.h"
+#include "complex.h"
 #include "qudit.h"
 
 int main() {
-    double amplitudes[] = {0.577350269, 0.577350269, 0.577350269}; // equal 1/3 outcome states (no complex nums yet)
+    Complex amplitudes[] = {
+        {0.577350269, 0.0}, // Real part: 0.577350269, Imaginary part: 0.0
+        {0.0, 0.577350269}, // Real part: 0.0, Imaginary part: 0.577350269
+        {-0.577350269, 0.0}  // Real part: 0.577350269, Imaginary part: 0.0
+    };
     int n_amplitudes = sizeof(amplitudes) / sizeof(amplitudes[0]);
     Qudit qd;
     qudit_init(&qd, amplitudes, n_amplitudes);
@@ -23,3 +28,4 @@ int main() {
     free(qd.amplitudes);
     return 0;
 }
+
