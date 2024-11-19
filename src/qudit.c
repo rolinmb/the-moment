@@ -28,7 +28,7 @@ int qudit_measure(Qudit* qudit, double obs) {
             return i;
         }
     }
-    return -1; // Should not reach here if obs is in range [0, 1)
+    return -1; // Should not reach here if obs is in range [0, 1]
 }
 
 void qudit_reset(Qudit* qudit, Complex* amplitudes, int num_amplitudes) {
