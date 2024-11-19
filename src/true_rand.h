@@ -1,8 +1,8 @@
-#ifndef TRUE_PYRAND_H
-#define TRUE_PYRAND_H
+#ifndef TRUE_RAND_H
+#define TRUE_RAND_H
 
-#include <windows.h>
-#include <wincrypt.h>
+#include "windows.h"
+#include "wincrypt.h"
 
 double true_rand();
 

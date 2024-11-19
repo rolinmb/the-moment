@@ -1,5 +1,5 @@
 #include "complex.h"
-#include <math.h>
+#include "math.h"
 
 Complex complex_init(double real, double imag) {
     Complex c;
