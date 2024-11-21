@@ -6,6 +6,8 @@
 #include "stdlib.h"
 #include "math.h"
 
+#define EPSILON 1e-6
+
 typedef struct {
     Complex* amplitudes;
     int n_states;

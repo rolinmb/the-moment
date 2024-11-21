@@ -36,14 +36,3 @@ Complex complex_divide(Complex a, Complex b) {
     result.imag = (a.imag * b.real - a.real * b.imag) / denominator;
     return result;
 }
-
-double complex_magnitude(Complex c) {
-    return sqrt(c.real * c.real + c.imag * c.imag);
-}
-
-Complex complex_conjugate(Complex c) {
-    Complex result;
-    result.real = c.real;
-    result.imag = -c.imag;
-    return result;
-}
