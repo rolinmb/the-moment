@@ -4,7 +4,7 @@ Complex *tensor_product(Complex *a0, int size0, Complex *a1, int size1, int *res
     *result_size = size0 * size1;
     Complex *result = (Complex *)malloc((*result_size) * sizeof(Complex));
     if (!result) {
-        fprintf(stderr, "ERROR: Memory allocation failed in tensor_product\n");
+        fprintf(stderr, "ERROR: Memory allocation failed in src/register.c tensor_product()\n");
         exit(1);
     }
     for (int i = 0; i < size0; i++) {
